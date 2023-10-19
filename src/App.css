@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Circular Std Medium';
+    src: url('../public/fonts/9475d6a0b79c164f9f605673714e75d9.eot');
+    src: url('../public/fonts/9475d6a0b79c164f9f605673714e75d9.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/9475d6a0b79c164f9f605673714e75d9.woff2') format('woff2'),
+    url('../public/fonts/9475d6a0b79c164f9f605673714e75d9.svg#CircularStdMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.body {
+    font-family: 'Circular Std Medium', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.Apps {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.border-bottom {
+    width: 250px;
+    border-bottom: 1px solid #282828;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-home {
+    width: 100% !important;
+    background:  linear-gradient(180deg, #3333A3 5.09%, #121212 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: rgba(255, 255,255,1);
 }
+
+.banner-icon-bg {
+    background-color: rgba(0,0,0,1);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+.banner-images {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.playlist-bg {
+
+}
+
+.playlist-bg {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.35));
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    border-radius: 8px;
+    opacity: .1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.bg-mixes {
+    background-color: rgba(0,0,0,1);
+}
+
+.mixes-bg {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.35));
+    background: linear-gradient( rgba(255, 255, 255, 1) ,rgba(0,0,0,1) );
+    border-radius: 8px;
+    opacity: .1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.mixes {
+    padding: 0px 21px;
+}
+
+.made {
+    padding: 0px 41px;
+}
+
+
+.bg-details {
+    background: linear-gradient(180deg, #DEF628 5.09%, #121212 90.28%);
+}
+
+.bg-box {
+    background: #222;
+}
+
+.icon-bg {
+    background:linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 1) );
+}
+
+.text-color {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.border-group {
+    border-bottom: 1px solid rgba(179, 179, 179, 1);
+}
+
+.padding {
+    padding: 10px 0px;
+}
+
+.bg-liked {
+    background: linear-gradient(180deg, #604EC1 5.09%, #121212 150.28%);
+}
+
+
+.bg-likeds  {
+    background: linear-gradient(180deg, #604EC1 -41.09%, #121212 30.28%);
+}
+
+.user-bg  {
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.80);
+    padding: 3px 12px 3px 3px;
+    align-items: center;
+}
+
+
+.Audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 1);
+}
+
+
+.audio-content {
+    position: relative;
+}
+
+.audio-image {
+    position: absolute;
+    top: -187px;
+    transform: translateX(-50%);
+    width: 310px;
+    height: 175px;
+    object-fit: cover;
+    left: 111px
+}
+
+ input {
+     accent-color: rgba(255, 255, 255, 1);
+ }
+
+ .mixeses {
+     padding: 26px 41px;
+ }
+
